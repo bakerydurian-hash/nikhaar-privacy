@@ -51,12 +51,10 @@
 
 <div class="container">
 
-<!-- ═══════════════════════════════════════ -->
 <!-- PRIVACY POLICY -->
-<!-- ═══════════════════════════════════════ -->
 <div id="privacy" class="page active">
   <h2>Privacy Policy</h2>
-  <p class="subtitle">Nikhaar AI — getnikhaar.in · Last updated: May 2026</p>
+  <p class="subtitle">Nikhaar AI — getnikhaar.in · Last updated: June 2026</p>
 
   <div class="card">
     <div class="card-title"><span>🤝</span> Our Commitment</div>
@@ -71,6 +69,8 @@
       <li>Scan results (beauty score, face shape, skin tone)</li>
       <li>Age, state, beauty goals (from profile setup)</li>
       <li>App usage data (scan count, plan type)</li>
+      <li>Approximate location (city/state level — for AQI and regional skin tips)</li>
+      <li>Push notification token (for scan reminders — only if you allow)</li>
     </ul>
   </div>
 
@@ -89,9 +89,11 @@
   <div class="card">
     <div class="card-title"><span>⚙️</span> 3. How We Use Your Data</div>
     <ul>
-      <li>Phone number: Login & account security only</li>
-      <li>Face photo: Beauty analysis via Face++ API & Gemini AI</li>
-      <li>Scan results: Shown to you in History & Profile</li>
+      <li>Phone number: Login &amp; account security only</li>
+      <li>Face photo: Sent securely to our server-side AI pipeline (Face++ API and Gemini AI) — never processed with exposed keys</li>
+      <li>Scan results: Shown to you in History &amp; Profile</li>
+      <li>Location (city/state): Fetched via WAQI API for real-time AQI data and regional skin analysis — never stored permanently</li>
+      <li>Push notifications: Sent only for scan reminders and streak milestones — you can disable anytime from app settings</li>
       <li>Usage data: To manage your scan limits and plan</li>
     </ul>
   </div>
@@ -100,12 +102,13 @@
     <div class="card-title"><span>☁️</span> 4. Third-Party Services</div>
     <ul>
       <li>Face++ API (Megvii) — face analysis</li>
-      <li>Google Gemini API — semantic analysis</li>
-      <li>Firebase (Google) — authentication & database</li>
-      <li>Google Play Billing — subscription payments</li>
+      <li>Google Gemini API — skin analysis</li>
+      <li>WAQI API (World Air Quality Index) — real-time AQI data for your city</li>
+      <li>Firebase (Google) — authentication, database &amp; push notifications</li>
+      <li>Google Play Billing — payments</li>
     </ul>
     <br>
-    <p>All third-party services are bound by their own privacy policies and GDPR/data protection standards.</p>
+    <p>All third-party services are bound by their own privacy policies and data protection standards.</p>
   </div>
 
   <div class="card highlight">
@@ -125,15 +128,15 @@
     <div class="card-title"><span>🔒</span> 6. Data Security</div>
     <ul>
       <li>All data transmitted over HTTPS (encrypted)</li>
+      <li>Face and skin analysis runs on secure server-side Cloud Functions — API keys are never stored in the app</li>
       <li>Firebase security rules restrict data access</li>
       <li>Only you can access your own scan data</li>
       <li>No employee has access to your photos</li>
-      <li>Regular security audits conducted</li>
     </ul>
   </div>
 
   <div class="card">
-    <div class="card-title"><span>👧</span> 7. Children's Privacy</div>
+    <div class="card-title"><span>👧</span> 7. Age Requirement</div>
     <p>Nikhaar AI is intended for users aged 16 and above. We do not knowingly collect data from children under 16. If we discover such data has been collected, it will be immediately deleted.</p>
   </div>
 
@@ -141,7 +144,9 @@
     <div class="card-title"><span>🕐</span> 8. Data Retention</div>
     <ul>
       <li>Photos: Deleted within 24 hours (or instantly on request)</li>
-      <li>Scan results: Retained for 30 days then auto-deleted</li>
+      <li>Scan results &amp; history — Free plan: 7 days</li>
+      <li>Scan results &amp; history — Pay-per-scan: 30 days</li>
+      <li>Scan results &amp; history — Pro plan: 90 days</li>
       <li>Account data: Retained until account deletion</li>
       <li>You may request deletion anytime</li>
     </ul>
@@ -168,12 +173,10 @@
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════ -->
 <!-- TERMS OF SERVICE -->
-<!-- ═══════════════════════════════════════ -->
 <div id="terms" class="page">
   <h2>Terms of Service</h2>
-  <p class="subtitle">Nikhaar AI — getnikhaar.in · Effective: May 2026</p>
+  <p class="subtitle">Nikhaar AI — getnikhaar.in · Effective: June 2026</p>
 
   <div class="card">
     <div class="card-title"><span>🤝</span> 1. Acceptance of Terms</div>
@@ -203,15 +206,16 @@
   </div>
 
   <div class="card">
-    <div class="card-title"><span>💳</span> 4. Subscriptions & Payments</div>
+    <div class="card-title"><span>💳</span> 4. Plans &amp; Payments</div>
     <ul>
-      <li>Free plan: 1 lifetime scan</li>
-      <li>Pro plan: ₹49/month — 2 scans/day</li>
-      <li>Gold plan: ₹99/month — 5 scans/day</li>
-      <li>Subscriptions auto-renew unless cancelled</li>
-      <li>Cancel anytime via Google Play settings</li>
-      <li>No refunds for partial months</li>
-      <li>Prices may change with 30 days notice</li>
+      <li>Free plan: Glow Check — unlimited and free</li>
+      <li>Pay-per-scan: One-time payment per AI scan — no expiry</li>
+      <li>Pro plan: ₹99/month — all scans, no ads, guided journey</li>
+      <li>Pro subscription auto-renews monthly unless cancelled before the renewal date</li>
+      <li>Cancel anytime via Google Play Settings → Subscriptions</li>
+      <li>Cancellation takes effect at end of current billing period — access continues until then</li>
+      <li>Payments processed by Google Play — non-refundable once charged, except where required by law</li>
+      <li>For refund requests within 48 hours of purchase, contact Google Play support directly</li>
     </ul>
   </div>
 
@@ -234,8 +238,8 @@
   <div class="card">
     <div class="card-title"><span>⚠️</span> 7. Disclaimers</div>
     <ul>
-      <li>Beauty scores are for entertainment purposes only</li>
-      <li>Results are AI-generated and may not be accurate</li>
+      <li>Beauty scores are for personal use and entertainment only</li>
+      <li>Results are AI-generated and may not be fully accurate</li>
       <li>We are not a medical or dermatological service</li>
       <li>Do not make medical decisions based on our results</li>
     </ul>
@@ -248,12 +252,12 @@
 
   <div class="card">
     <div class="card-title"><span>🗑️</span> 9. Account Termination</div>
-    <p>We may suspend or terminate your account if you violate these terms. You may delete your account at any time. Upon termination, your data will be deleted within 30 days.</p>
+    <p>We may suspend or terminate your account if you violate these terms. You may delete your account at any time from Settings. Upon termination, your data will be deleted within 30 days.</p>
   </div>
 
   <div class="card">
     <div class="card-title"><span>⚖️</span> 10. Governing Law</div>
-    <p>These terms are governed by the laws of India. Any disputes shall be resolved in the courts of Delhi, India. These terms comply with the DPDP Act, 2023.</p>
+    <p>These terms are governed by the laws of India and comply with the DPDP Act, 2023. Any disputes shall be resolved in the courts of Delhi, India.</p>
   </div>
 
   <div class="card">
@@ -266,7 +270,7 @@
 
   <div class="badge">
     <strong>By using Nikhaar AI, you agree to these terms.</strong>
-    <small>Last updated: May 2026</small>
+    <small>Last updated: June 2026</small>
   </div>
 </div>
 
